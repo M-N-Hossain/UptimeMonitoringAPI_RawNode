@@ -1,0 +1,113 @@
+// {
+//   "extends": ["prettier", "airbnb-base", "airbnb", "plugin:node/recommended","eslint:recommended"],
+//   "plugins": ["prettier"],
+//   "rules": {
+//     "spaced-comment": "off",
+//     "no-console": "off",
+//     "consistent-return": "off",
+//     "func-names": "off",
+//     "object-shorthand": "off",
+//     "no-process-exit": "off",
+//     "no-param-reassign": "off",
+//     "no-return-await": "off",
+//     "no-underscore-dangle": "off",
+//     "class-methods-use-this": "off",
+//     "no-unused-vars": ["error", {"argsIgnorePattern": "req|res|next|val" }],
+//     "indent": 0,
+//     "linebreak-style": 1,
+//     "operator-linebreak": 0,
+//     "max-len": ["error", { "code": 100 }],
+//     "prettier/prettier": [
+//       "error",
+//       {
+//         "trailingComma": "es6",
+//         "singleQuote": true,
+//         "printWidth": 100,
+//         "usePrettierrc": false,
+//         "tabWidth": 2,
+//         "semi": true
+//       }
+//     ]
+//   }
+// }
+
+// {
+//   "extends": [
+//     "prettier",
+//     "airbnb",
+//     "plugin:node/recommended",
+//     "eslint:recommended",
+//     "airbnb-base"
+//   ],
+//   "parserOptions": {
+//     "ecmaVersion": 12
+//   },
+//   "env": {
+//     "commonjs": true,
+//     "node": true
+//   },
+//   "plugins": ["prettier"],
+//   "rules": {
+//     "spaced-comment": "off",
+//     "no-console": 0,
+//     "consistent-return": "off",
+//     "func-names": "off",
+//     "object-shorthand": "off",
+//     "no-process-exit": "off",
+//     "no-param-reassign": "off",
+//     "no-return-await": "off",
+//     "no-underscore-dangle": 0,
+//     "class-methods-use-this": "off",
+//     "no-unused-vars": ["error", { "argsIgnorePattern": "req|res|next|val" }],
+//     "indent": 0,
+//     "linebreak-style": "warn",
+//     "operator-linebreak": 0,
+//     "max-len": ["error", { "code": 100 }]
+//   }
+// }
+
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base",
+    "plugin:react/recommended",
+    "plugin:node/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["prettier", "react"],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-console": "off",
+    "spaced-comment": "off",
+    "consistent-return": "off",
+    "func-names": "off",
+    "object-shorthand": "off",
+    "no-process-exit": "off",
+    "no-param-reassign": "off",
+    "no-return-await": "off",
+    "no-underscore-dangle": 0,
+    "class-methods-use-this": "off",
+    "no-unused-vars": ["error", { "argsIgnorePattern": "req|res|next|val" }],
+    "linebreak-style": "off",
+    "operator-linebreak": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
