@@ -45,7 +45,7 @@ notifications.sendTwilioSms = (phone, msg, callback) => {
     };
 
     // instantiate the request object
-    const req = https.request(requestDetails, res => {
+    const req = https.request(requestDetails, (res) => {
       // get the status of the sent request
       const status = res.statusCode;
       // callback successfully if the request went through
@@ -56,7 +56,7 @@ notifications.sendTwilioSms = (phone, msg, callback) => {
       }
     });
 
-    req.on('error', e => {
+    req.on('error', (e) => {
       callback(e);
     });
 
