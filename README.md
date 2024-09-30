@@ -116,4 +116,6 @@ sendTwilioSms(newCheckData.userPhone, msg, (err) => {
 };
 ```
 
-Thank You 
+Thanks for reaching out this far and I hope this will be helpful.
+
+A special thanks to the LEARN WITH SUMIT Platform.
